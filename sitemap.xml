@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ===================== -->
+  <!-- Core Pages            -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://www.truzenconsulting.com/index.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/about/index.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/about/leadership.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/about/partners.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/about/careers.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/contact.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <!-- ===================== -->
+  <!-- Services Pages        -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://www.truzenconsulting.com/services/index.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/services/ai-strategy.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/services/data-strategy.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/services/ai-governance.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/services/ai-risk-compliance.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/services/data-governance.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/services/ai-operating-model.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/services/executive-education.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <!-- ===================== -->
+  <!-- Industries Pages      -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://www.truzenconsulting.com/industries/index.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/industries/financial-services.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/industries/education-edtech.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/industries/public-sector.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/industries/healthcare-life-sciences.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/industries/digital-enterprises.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <!-- ===================== -->
+  <!-- Approach & Maturity   -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://www.truzenconsulting.com/approach/ai-maturity-model.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/approach/ai-transformation-framework.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <!-- ===================== -->
+  <!-- Insights              -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://www.truzenconsulting.com/insights/index.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/insights/articles.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/insights/briefings-reports.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <!-- ===================== -->
+  <!-- Resource Pages        -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://www.truzenconsulting.com/resources/library.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/resources/media-press.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/resources/tools-templates.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <!-- ===================== -->
+  <!-- Legal Pages           -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://www.truzenconsulting.com/legal/privacy.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/legal/terms.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/legal/cookies.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.truzenconsulting.com/legal/sitemap.html</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+
+</urlset>
