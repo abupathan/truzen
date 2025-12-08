@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Engage – Consultations, RFPs &amp; Newsletter – Truzen Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Engage with Truzen Consulting through a unified funnel: request a consultation, submit an RFP, or join the newsletter for updates on AI strategy, governance, and data.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Engage – Consultations, RFPs &amp; Newsletter – Truzen Consulting">
+  <meta property="og:description"
+        content="Use this unified engagement page to request a consultation, submit an RFP, or sign up for Truzen Consulting’s governance-focused updates.">
+  <meta property="og:type" content="website">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="../truzen.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div data-include="../navbar.html"></div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="tz-hero" style="min-height: 38vh;">
+    <div class="container">
+      <div class="row gy-4">
+
+        <div class="col-lg-8">
+          <p class="tz-hero__tag mb-2">Engage</p>
+          <h1 class="display-6 fw-semibold mb-3">
+            One place to request a consultation, submit an RFP, or join the newsletter.
+          </h1>
+          <p class="tz-text-small tz-muted mb-0">
+            This page provides a unified funnel to engage with Truzen Consulting. You can
+            request a consultation, share basic RFP details, or subscribe to governance-focused
+            updates using a single, consolidated structure.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA CARDS (3 PATHS) -->
+  <section class="tz-section">
+    <div class="container">
+      <p class="tz-section__label">Choose how you’d like to engage</p>
+      <h2 class="tz-section__title">Consultation, RFP, or newsletter</h2>
+      <p class="tz-muted mb-4">
+        Select the option that best matches your current need. The form below adapts to your
+        choice through simple field groupings (front-end only). No back-end integration is
+        implied on this page.
+      </p>
+
+      <div class="row gy-3">
+
+        <div class="col-md-4">
+          <div class="card tz-card h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6 mb-2">Book a consultation</h3>
+              <p class="tz-text-small tz-muted mb-2">
+                Share a concise summary of your AI, data, or governance questions and
+                request an initial consultation.
+              </p>
+              <ul class="tz-text-xsmall tz-muted mb-3">
+                <li>AI / data strategy discussions</li>
+                <li>Governance &amp; operating model topics</li>
+                <li>Leadership or board-oriented briefings</li>
+              </ul>
+              <p class="tz-text-xsmall tz-muted mb-0 mt-auto">
+                Use the form below and select <strong>Book consultation</strong> as your engagement type.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card tz-card h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6 mb-2">Submit an RFP / RFI</h3>
+              <p class="tz-text-small tz-muted mb-2">
+                Provide high-level RFP or RFI context and a non-confidential summary of
+                what you are seeking from an advisory partner.
+              </p>
+              <ul class="tz-text-xsmall tz-muted mb-3">
+                <li>Basic scope and timelines</li>
+                <li>Relevant domains (AI, data, governance)</li>
+                <li>Any public or sharable documentation links</li>
+              </ul>
+              <p class="tz-text-xsmall tz-muted mb-0 mt-auto">
+                Use the form below and select <strong>RFP / RFI</strong> as your engagement type.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card tz-card h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6 mb-2">Join the newsletter</h3>
+              <p class="tz-text-small tz-muted mb-2">
+                Indicate interest in curated updates on AI strategy, governance, data
+                foundations, and Truzen publications.
+              </p>
+              <ul class="tz-text-xsmall tz-muted mb-3">
+                <li>Occasional governance-focused notes</li>
+                <li>Updates on new PoVs and research</li>
+                <li>No day-to-day marketing emails</li>
+              </ul>
+              <p class="tz-text-xsmall tz-muted mb-0 mt-auto">
+                Use the form below and select <strong>Newsletter</strong> as your engagement type.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- UNIFIED ENGAGEMENT FORM -->
+  <section class="tz-section tz-section--alt">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- FORM COLUMN -->
+        <div class="col-lg-7">
+          <p class="tz-section__label">Unified form</p>
+          <h2 class="tz-section__title">Share basic details in one place</h2>
+          <p class="tz-muted mb-4">
+            This unified form supports all three paths. Fields marked as optional should be
+            used only if relevant. Please do not include confidential or regulated data.
+          </p>
+
+          <form class="tz-card p-3 p-md-4 border rounded-3 bg-white" novalidate>
+
+            <!-- Engagement Type -->
+            <div class="mb-3">
+              <label for="engagementType" class="form-label tz-text-small fw-semibold">
+                Engagement type <span class="text-danger">*</span>
+              </label>
+              <select id="engagementType" name="engagementType" class="form-select form-select-sm" required>
+                <option value="" selected disabled>Select an option</option>
+                <option value="consultation">Book consultation</option>
+                <option value="rfp">RFP / RFI submission (high-level)</option>
+                <option value="newsletter">Newsletter signup</option>
+              </select>
+              <div class="tz-text-xsmall tz-muted mt-1">
+                This determines how the request is interpreted. A single form submission
+                supports all three paths.
+              </div>
+            </div>
+
+            <!-- Name -->
+            <div class="mb-3">
+              <label for="fullName" class="form-label tz-text-small fw-semibold">
+                Your name <span class="text-danger">*</span>
+              </label>
+              <input type="text"
+                     id="fullName"
+                     name="fullName"
+                     class="form-control form-control-sm"
+                     required>
+            </div>
+
+            <!-- Organization -->
+            <div class="mb-3">
+              <label for="organization" class="form-label tz-text-small fw-semibold">
+                Organization
+              </label>
+              <input type="text"
+                     id="organization"
+                     name="organization"
+                     class="form-control form-control-sm"
+                     placeholder="Optional – helpful for consultation and RFP requests">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label tz-text-small fw-semibold">
+                Work email <span class="text-danger">*</span>
+              </label>
+              <input type="email"
+                     id="email"
+                     name="email"
+                     class="form-control form-control-sm"
+                     required>
+              <div class="tz-text-xsmall tz-muted mt-1">
+                Used for responses and, if you select <strong>Newsletter</strong>, for
+                subscription to future updates.
+              </div>
+            </div>
+
+            <!-- Region / Time Zone -->
+            <div class="mb-3">
+              <label for="region" class="form-label tz-text-small fw-semibold">
+                Region / time zone
+              </label>
+              <input type="text"
+                     id="region"
+                     name="region"
+                     class="form-control form-control-sm"
+                     placeholder="Example: India (IST), Europe (CET), US East, etc.">
+            </div>
+
+            <!-- RFP / Consultation Context (Optional when Newsletter only) -->
+            <div class="mb-3">
+              <label for="subject" class="form-label tz-text-small fw-semibold">
+                Brief subject or focus
+              </label>
+              <input type="text"
+                     id="subject"
+                     name="subject"
+                     class="form-control form-control-sm"
+                     placeholder="Optional – useful for consultation / RFP requests">
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label tz-text-small fw-semibold">
+                Additional context (for consultation / RFP)
+              </label>
+              <textarea id="message"
+                        name="message"
+                        rows="4"
+                        class="form-control form-control-sm"
+                        placeholder="For consultations and RFPs, outline your context, timelines, and key questions. Leave blank if you are only signing up to the newsletter."></textarea>
+              <div class="tz-text-xsmall tz-muted mt-1">
+                For RFPs, share only non-confidential, high-level information. Detailed
+                documents can be shared later through more appropriate channels, if needed.
+              </div>
+            </div>
+
+            <!-- Newsletter-specific preference -->
+            <div class="mb-3">
+              <label class="form-label tz-text-small fw-semibold">
+                Newsletter preferences
+              </label>
+              <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox"
+                       id="newsletterGov"
+                       name="newsletterGov">
+                <label class="form-check-label tz-text-small" for="newsletterGov">
+                  I am interested in governance-focused notes and updates.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox"
+                       id="newsletterEvents"
+                       name="newsletterEvents">
+                <label class="form-check-label tz-text-small" for="newsletterEvents">
+                  I would like to be informed about webinars or briefings when available.
+                </label>
+              </div>
+              <p class="tz-text-xsmall tz-muted mb-0 mt-1">
+                These checkboxes indicate preferences only. There is no automated email
+                system implied by this page on its own.
+              </p>
+            </div>
+
+            <!-- Preferred Next Step -->
+            <div class="mb-3">
+              <label class="form-label tz-text-small fw-semibold">
+                Preferred next step
+              </label>
+              <div class="form-check">
+                <input class="form-check-input"
+                       type="radio"
+                       name="nextStep"
+                       id="nextStepEmail"
+                       value="email"
+                       checked>
+                <label class="form-check-label tz-text-small" for="nextStepEmail">
+                  Initial response by email
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input"
+                       type="radio"
+                       name="nextStep"
+                       id="nextStepCall"
+                       value="call">
+                <label class="form-check-label tz-text-small" for="nextStepCall">
+                  Suggest a short introductory call (where appropriate)
+                </label>
+              </div>
+            </div>
+
+            <!-- Submit Note -->
+            <div class="d-flex align-items-center gap-3 mt-3">
+              <button type="submit" class="btn btn-primary btn-sm rounded-pill px-4">
+                Submit
+              </button>
+              <p class="tz-text-xsmall tz-muted mb-0">
+                This is a front-end form only. Integration with email, CRM, or marketing
+                platforms would be configured separately.
+              </p>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- SIDE COLUMN: EXPECTATIONS & DATA HANDLING -->
+        <div class="col-lg-5">
+          <p class="tz-section__label">Guidance</p>
+          <h2 class="tz-section__title">What this funnel is designed to do</h2>
+
+          <div class="card tz-card mb-3">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Single entry point</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Whether you are booking a consultation, sharing basic RFP context, or
+                joining the newsletter, this page is intentionally designed as a single,
+                unified entry point.
+              </p>
+            </div>
+          </div>
+
+          <div class="card tz-card mb-3">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Professional and minimal</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                The form asks only for information that is typically required to respond
+                professionally. It avoids requesting sensitive details or confidential
+                documentation at this stage.
+              </p>
+            </div>
+          </div>
+
+          <div class="card tz-card">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Data handling note</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Please do not share confidential, regulated, or highly sensitive information
+                here. If deeper materials or formal RFP documents need to be exchanged,
+                appropriate secure channels can be agreed in subsequent communication.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<div data-include="../footer.html"></div>
+
+<!-- Bootstrap JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  crossorigin="anonymous"></script>
+
+<!-- Truzen JS -->
+<script src="../truzen.js"></script>
+
+</body>
+</html>
