@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Enhanced SEO Title -->
+  <title>AI Risk Assurance, Model Validation & Governance Testing | Truzen Consulting</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Improved Meta Description (grounded in existing content) -->
+  <meta name="description"
+        content="Truzen Consulting helps organizations identify AI-related risks, design and embed controls, establish monitoring, support model validation and governance testing, and strengthen readiness for internal oversight and emerging regulatory expectations.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Risk Assurance – Truzen Consulting">
+  <meta property="og:description"
+        content="Explore Truzen’s AI Risk Assurance work, covering AI risk inventories, controls, monitoring, model validation, governance testing, and integration with enterprise risk and audit.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/og/truzen-ai-risk-assurance.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Risk Assurance – Truzen Consulting">
+  <meta name="twitter:description"
+        content="AI risk inventories, controls, monitoring, model validation, and governance testing designed for boards, risk owners, and internal oversight.">
+  <meta name="twitter:image" content="/assets/og/truzen-ai-risk-assurance.jpg">
+
+  <!-- FAQ Schema for Leadership Questions -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where do we have AI exposure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Develop a clear view of where AI systems are in use, which decisions they influence, and what risks they introduce."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who owns and oversees AI risks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Clarify roles and responsibilities across business, technology, data, risk, compliance, and audit so AI risk is not owned by nobody."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do we show AI is under control?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Define the evidence that matters for internal assurance and external scrutiny, and how it is organized for reviews, audits, and inquiries."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where are we comfortable taking AI risk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Differentiate between high-impact and lower-impact AI use cases and align risk appetite, controls, and monitoring intensity accordingly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do AI risks fit into our existing frameworks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Integrate AI risks into existing enterprise risk, compliance, and internal control frameworks instead of creating separate structures."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What monitoring and reporting do we need for AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Decide what should be monitored, how frequently, and how concerning patterns are escalated to oversight bodies and leadership."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How prepared are we for internal and external AI reviews?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Assess the level of documentation, evidence, and reasoning available for internal audit, boards, or external parties."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous">
+
+  <!-- Truzen CSS -->
+  <link rel="stylesheet" href="../truzen.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div data-include="../navbar.html"></div>
+
+<main>
+
+  <!-- HERO + BREADCRUMB -->
+  <section class="tz-hero hero--ai-risk-assurance">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <p class="tz-hero__tag mb-2">AI Risk Assurance</p>
+          <h1 class="display-6 fw-semibold mb-3">
+            Making AI risks visible, controlled, and ready for scrutiny.
+          </h1>
+          <p class="tz-text-small tz-muted mb-0">
+            We help organizations identify AI-related risks, design and embed controls,
+            establish monitoring, and strengthen readiness for internal oversight and
+            emerging regulatory expectations—without over-engineering the response.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEXT & OBJECTIVES -->
+  <section id="context" class="tz-section">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-7">
+          <p class="tz-section__label">AI risk in practice</p>
+          <h2 class="tz-section__title">
+            Turning AI risk into something concrete, not abstract.
+          </h2>
+          <p class="tz-muted mb-3">
+            As AI initiatives evolve from pilots into production, questions intensify:
+            what risks do these systems introduce, who is accountable, and how will
+            management and regulators assess whether AI is under control? Many teams
+            feel this pressure but lack a practical way to address it.
+          </p>
+          <p class="tz-muted mb-0">
+            Truzen’s AI Risk Assurance work is focused on making risk tangible,
+            auditable, and linked to real decisions. We help stakeholders move away
+            from generic concerns into traceable inventories, clear controls, and
+            evidence that can stand up to challenge.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-3">Typical triggers for AI Risk Assurance</h3>
+              <ul class="tz-text-small tz-muted mb-0">
+                <li>Growing AI portfolio with limited visibility on risks and controls.</li>
+                <li>Board or executive questions about how AI is governed.</li>
+                <li>Internal audit or compliance reviews including AI use cases.</li>
+                <li>External regulatory developments touching AI systems.</li>
+                <li>Major AI transformation programs that need risk alignment.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP QUESTIONS -->
+  <section id="leadership-questions" class="tz-section tz-section--alt">
+    <div class="container">
+      <p class="tz-section__label">Leadership questions</p>
+      <h2 class="tz-section__title">What we help leadership teams clarify</h2>
+      <p class="tz-muted mb-4">
+        AI Risk Assurance engagements are anchored around questions that boards, risk
+        owners, and senior leadership are already asking. The aim is to translate
+        these into concrete analysis and actions rather than abstract frameworks.
+      </p>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Where do we have AI exposure?</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Build a clear view of where AI models and systems are in use, which
+                decisions they influence, and what risks they introduce across the
+                portfolio.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Who owns and oversees AI risks?</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Clarify roles and responsibilities across business owners, technology,
+                data, risk, compliance, and audit so that AI risk is not “owned by
+                nobody”.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">How do we show AI is under control?</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Define what evidence matters for internal assurance and external
+                scrutiny, and how it should be organized to support reviews, audits,
+                and inquiries.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Where are we comfortable taking risk?</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Distinguish between high-impact and lower-impact AI use cases, and
+                align risk appetite, controls, and monitoring intensity accordingly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">How do AI risks fit into our existing frameworks?</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Integrate AI-related risks into existing enterprise risk, compliance,
+                and internal control frameworks instead of creating a separate universe.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">What monitoring and reporting do we need?</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Define what should be monitored, at what frequency, and how to escalate
+                concerning patterns to oversight bodies and leadership.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">How prepared are we for internal and external reviews?</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Understand the current level of documentation, evidence, and reasoning
+                available if internal audit, boards, or external parties ask questions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE WORKSTREAMS -->
+  <section id="workstreams" class="tz-section">
+    <div class="container">
+      <p class="tz-section__label">Core workstreams</p>
+      <h2 class="tz-section__title">Core AI risk assurance workstreams</h2>
+      <p class="tz-muted mb-4">
+        AI Risk Assurance is typically delivered through a set of structured workstreams.
+        These can be scoped narrowly for specific AI projects or more broadly across an
+        AI portfolio, depending on maturity and risk appetite.
+      </p>
+
+      <div class="row g-3">
+        <!-- 1. AI Risk Inventory & Heatmap -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">AI risk inventory &amp; heatmap</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Build a structured inventory of AI systems, mapping them to key risks,
+                business processes, and owners. Use this to prioritize attention and
+                oversight, rather than treating all AI initiatives the same.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Control Design & Implementation -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Control design &amp; implementation</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Identify which controls are needed at different stages of the AI lifecycle
+                (from experimentation to production) and support the design, documentation,
+                and practical embedding of those controls into ways of working.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Monitoring & Reporting -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Monitoring &amp; reporting</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Define monitoring approaches for AI models and systems, including what
+                should be tracked, how frequently, and how exceptions or incidents are
+                escalated to relevant forums or governance bodies.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Integration with Risk, Compliance & Audit -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Integration with risk, compliance &amp; audit</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Align AI risk handling with existing risk registers, compliance
+                processes, internal control frameworks, and audit planning.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Documentation & Evidence -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Documentation &amp; evidence</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Support teams in building the minimum viable documentation and evidence
+                needed for oversight, without overwhelming practitioners with bureaucracy.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Training & Awareness -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Training &amp; awareness</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Help risk, compliance, audit, and business teams understand AI risks
+                and controls in practical terms, using language and examples aligned
+                with their day-to-day work.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPICAL FORMATS -->
+  <section id="engagement-formats" class="tz-section tz-section--alt">
+    <div class="container">
+      <p class="tz-section__label">Engagement formats</p>
+      <h2 class="tz-section__title">Typical AI risk assurance engagement formats</h2>
+      <p class="tz-muted mb-4">
+        Depending on where you are in your AI journey, AI Risk Assurance can begin with
+        a focused review or be structured as a multi-phase engagement across the AI
+        portfolio. The formats below reflect what clients most commonly request.
+      </p>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">AI risk baseline review</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                A time-bound review that maps AI use cases, key risks, current controls,
+                and gaps. Provides a baseline for further work and helps leadership
+                understand the current state without committing to a long program.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Portfolio-level risk framework</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Design or refine AI risk and control frameworks that can be applied
+                consistently across the AI portfolio, including guidance for new
+                initiatives and for changes to existing models.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Deep-dive on critical AI systems</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Detailed review of specific AI models or systems that are high-impact
+                or high-visibility, including risk analysis, control assessment, and
+                recommendations for strengthening assurance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Internal audit support</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Support internal audit teams in scoping and executing AI-related audits,
+                from understanding technical concepts to designing practical audit steps.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Regulatory readiness checks</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Assess how current AI risk and control practices align with emerging
+                regulatory expectations, identifying areas where additional clarity or
+                documentation may be needed.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Ongoing advisory support</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Provide ongoing support to risk, compliance, and AI leadership teams as
+                the AI portfolio evolves and new questions arise.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECTIONS TO OTHER SERVICES -->
+  <section id="connected-services" class="tz-section">
+    <div class="container">
+      <p class="tz-section__label">Connected services</p>
+      <h2 class="tz-section__title">How AI risk assurance connects to other Truzen services</h2>
+      <p class="tz-muted mb-4">
+        AI Risk Assurance is not a standalone activity; it connects directly to how AI
+        is conceived, built, and operated. We work closely with other Truzen services
+        so that risk is integrated rather than bolted on.
+      </p>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">AI Strategy</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Ensuring that AI strategy choices factor in risk appetite, regulatory
+                context, and the organization’s capacity to manage and monitor AI.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">AI Governance &amp; Responsible AI</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Translating principles and policies into concrete controls, processes,
+                and accountability structures that shape AI risk handling.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">Data Governance</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Connecting AI risk questions to data quality, lineage, access controls,
+                and privacy considerations across the data lifecycle.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-2">AI Operating Model &amp; Org Readiness</h3>
+              <p class="tz-text-small tz-muted mb-0">
+                Embedding AI risk responsibilities into operating models, committees,
+                roles, and day-to-day decision-making.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY AI RISK & VALIDATION MATTER -->
+  <section id="why-validation" class="tz-section">
+    <div class="container">
+      <p class="tz-section__label">Why AI risk &amp; validation matter</p>
+      <h2 class="tz-section__title">AI value is only sustainable if risk and controls are clear</h2>
+
+      <div class="row gy-4">
+        <div class="col-lg-7">
+          <p class="tz-muted mb-3">
+            As AI systems become embedded into processes and decisions, questions from boards,
+            regulators, and internal stakeholders become more specific: how does this model work,
+            what are its limitations, who owns it, and what controls exist around it?
+          </p>
+          <p class="tz-muted mb-0">
+            Truzen’s AI Risk &amp; Model Validation work is designed to help organizations answer
+            these questions with clarity. The aim is not to slow innovation, but to make sure
+            that AI initiatives can withstand scrutiny and remain manageable over time.
+          </p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-3">What this service focuses on</h3>
+              <ul class="tz-text-small tz-muted mb-0">
+                <li>Clarifying how AI models work and what they are used for.</li>
+                <li>Testing models for stability, bias, and operational fitness.</li>
+                <li>Assessing whether governance processes operate as intended.</li>
+                <li>Designing model risk controls suitable for AI portfolios.</li>
+                <li>Aligning AI model risk with enterprise risk expectations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODEL VALIDATION -->
+  <section id="model-validation" class="tz-section tz-section--alt">
+    <div class="container">
+      <p class="tz-section__label">Model validation</p>
+      <h2 class="tz-section__title">Making AI models explainable, reviewable, and defensible</h2>
+
+      <div class="row gy-4">
+        <div class="col-lg-7">
+          <p class="tz-muted mb-3">
+            Model validation is the set of activities that examine whether a model is appropriate
+            for its purpose, how it behaves across different conditions, and whether it is being
+            used in a way that matches its design assumptions. For AI models, this goes beyond
+            accuracy into questions of stability, bias, and operational fit.
+          </p>
+          <p class="tz-muted mb-0">
+            Truzen’s contribution is to help organizations structure validation work so that it
+            is repeatable and transparent. This often involves working with internal teams to
+            define validation questions, evidence expectations, and documentation that can be
+            understood by senior stakeholders and oversight functions.
+          </p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-3">Typical validation focus areas</h3>
+              <ul class="tz-text-small tz-muted mb-0">
+                <li>Clarifying model purpose, scope, and key assumptions.</li>
+                <li>Testing model behaviour across segments and scenarios.</li>
+                <li>Reviewing training data and feature choices.</li>
+                <li>Checking performance stability over time.</li>
+                <li>Assessing documentation quality for oversight and audit.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GOVERNANCE TESTING -->
+  <section id="governance-testing" class="tz-section">
+    <div class="container">
+      <p class="tz-section__label">Governance testing</p>
+      <h2 class="tz-section__title">Checking whether governance processes work in real conditions</h2>
+
+      <div class="row gy-4">
+        <div class="col-lg-7">
+          <p class="tz-muted mb-3">
+            Many organizations have AI or model governance policies written down, but the
+            critical question is whether those policies are actually followed and whether
+            they work when new initiatives are proposed or when issues emerge.
+          </p>
+          <p class="tz-muted mb-0">
+            Governance testing looks at how AI and model governance processes operate in
+            practice: how initiatives are approved, what information is reviewed, how
+            decisions are recorded, and how exceptions or incidents are handled. The goal
+            is to identify gaps and make governance practical, not theoretical.
+          </p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-3">Examples of governance tests</h3>
+              <ul class="tz-text-small tz-muted mb-0">
+                <li>Tracing how a recent AI initiative was proposed, assessed, and approved.</li>
+                <li>Reviewing committee or forum materials for clarity and sufficiency.</li>
+                <li>Checking whether risk and compliance feedback is visible and addressed.</li>
+                <li>Assessing how issues, incidents, or material changes are escalated.</li>
+                <li>Comparing policy expectations with what actually happens in practice.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODEL RISK & CONTROLS -->
+  <section id="model-risk-controls" class="tz-section tz-section--alt">
+    <div class="container">
+      <p class="tz-section__label">Model risk &amp; controls</p>
+      <h2 class="tz-section__title">Integrating AI models into enterprise risk frameworks</h2>
+
+      <div class="row gy-4">
+        <div class="col-lg-7">
+          <p class="tz-muted mb-3">
+            AI models should not exist outside of enterprise risk frameworks. Instead, they
+            should be integrated into model risk, operational risk, and technology risk
+            structures, with clear expectations around controls and escalation.
+          </p>
+          <p class="tz-muted mb-0">
+            Truzen works with risk, compliance, and model risk functions to position AI
+            within existing risk inventories, clarifying accountability, and defining
+            control expectations that are realistic for the technologies in use.
+          </p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-3">Core control considerations</h3>
+              <ul class="tz-text-small tz-muted mb-0">
+                <li>How AI models are registered and classified within model inventories.</li>
+                <li>Which controls apply at different lifecycle stages (development, deployment, monitoring).</li>
+                <li>How changes to models are proposed, reviewed, and documented.</li>
+                <li>How independent challenge or review is organized for material models.</li>
+                <li>How AI-related risks are surfaced to senior management and boards.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK WITH CLIENTS -->
+  <section id="how-we-work" class="tz-section">
+    <div class="container">
+      <p class="tz-section__label">How we work</p>
+      <h2 class="tz-section__title">Working alongside risk, compliance, and technical teams</h2>
+
+      <div class="row gy-4">
+        <div class="col-lg-7">
+          <p class="tz-muted mb-3">
+            AI risk and model validation are not purely technical or purely policy topics.
+            They touch risk, compliance, technology, data, and business lines. Truzen’s
+            approach is to work with all of these stakeholders, using language and artefacts
+            that make sense to each group.
+          </p>
+          <p class="tz-muted mb-0">
+            Engagements are structured so that internal teams remain in control. Our role
+            is to bring structure, external perspective, and reusable patterns that make
+            AI Risk Assurance more repeatable over time.
+          </p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card tz-card h-100">
+            <div class="card-body">
+              <h3 class="h6 mb-3">Typical collaboration model</h3>
+              <ul class="tz-text-small tz-muted mb-0">
+                <li>Joint scoping with risk, compliance, and technology owners.</li>
+                <li>Workshops to map AI use cases and risks.</li>
+                <li>Structured reviews of models, controls, and governance artefacts.</li>
+                <li>Iterative refinement of frameworks and documentation.</li>
+                <li>Coaching for internal teams to sustain practices after the engagement.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section id="cta" class="tz-section">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-lg-8">
+          <h2 class="h4 mb-1">
+            Ready to make AI risk and compliance more concrete?
+          </h2>
+          <p class="tz-text-small tz-muted mb-0">
+            We can begin with an AI risk baseline review or move directly into
+            control framework and readiness work, depending on where you are today.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="../contact/engage.html" class="btn btn-primary rounded-pill px-4">
+            Request an AI risk discussion
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<div data-include="../footer.html"></div>
+
+<!-- Bootstrap JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  crossorigin="anonymous"></script>
+
+<!-- Truzen JS (handles navbar/footer includes + UX logic) -->
+<script src="../truzen.js"></script>
+
+</body>
+</html>
